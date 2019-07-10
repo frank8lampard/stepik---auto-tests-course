@@ -19,10 +19,8 @@ def browser(request):
     browser = webdriver.Chrome()
     if browser_name == "chrome" and user_language == "en":
         print("\nstart chrome browser for test..")
-
     elif browser_name == "firefox":
         print("\nstart firefox browser for test..")
-
     else:
         print("Browser {} still is not implemented".format(browser_name))
     yield browser
